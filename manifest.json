@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "New Tab Right",
+  "version": "1.0",
+  "commands": {
+    "new-tab-right": {
+      "suggested_key": {
+        "default": "Alt+Shift+D"
+      },
+      "description": "Open new tab to the right"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["tabs"]
+}
