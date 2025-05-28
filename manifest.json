@@ -1,7 +1,19 @@
 {
   "manifest_version": 3,
   "name": "New Tab Right",
-  "version": "1.1",
+  "version": "1.1.0",
+  "description": "Open new tabs to the right of the current tab with a keyboard shortcut",
+  "author": "privacy-focused-dev",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "newtabright@example.com"
+    }
+  },
+  "icons": {
+    "48": "icon-48.png",
+    "96": "icon-96.png",
+    "128": "icon-128.png"
+  },
   "commands": {
     "new-tab-right": {
       "suggested_key": {
@@ -11,7 +23,7 @@
     }
   },
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   },
   "permissions": ["tabs"]
 }
